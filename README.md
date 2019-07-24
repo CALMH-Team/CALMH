@@ -7,7 +7,7 @@ Welcome to CALMH repository
 3. Project roadmap
 4. Project workflows
 
-Can be found here [here](https://ee)
+Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)
 
 # Deployment Environment
 Link to the application in IBM Cloud
