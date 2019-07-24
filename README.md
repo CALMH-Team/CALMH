@@ -1,5 +1,7 @@
 
-Welcome to CALMH repository
+### Welcome to CALMH repository
+
+Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://)
 
 ### Project documentation:
 1. Project description
