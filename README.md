@@ -15,7 +15,7 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
     - Aldo Vargas (aldo_vargas@persistent.com)
     - Amilcar Yanez (amilcar_yanez@persistent.com)
 
-Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)
+**Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
 
 ### Deployment Environment
 Link to the application in IBM Cloud
