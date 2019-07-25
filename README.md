@@ -8,6 +8,12 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
 2. Architecture diagrams
 3. Project roadmap
 4. Project workflows
+5. Team Members
+    - Sebastianus Bekker (sebastianus_bekker@persistent.com)
+    - Roberto Mosqueda (roberto_mosqueda@persistent.com)
+    - Luis Peregrina (luis_andrade@persistent.com)
+    - Aldo Vargas (aldo_vargas@persistent.com)
+    - Amilcar Yanez (amilcar_yanez@persistent.com)
 
 Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)
 
