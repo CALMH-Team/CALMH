@@ -25,8 +25,8 @@ Link to the application in IBM Cloud
 1. Admin:
 administrator:
 2. Volunteer User:
-volunteer:
-3.Patient
+volunteer: 
+3. Patient:
 Patients can be register as New user and/or use the application as anonymous.
 
 ### Mobile 
