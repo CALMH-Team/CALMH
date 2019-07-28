@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Users</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group>
+      <ion-item *ngFor="let user of users">
+        <ion-label>
+          {{user.firstname}} {{user.lastname}} ({{user.username}})
+        </ion-label>
+
+        <ion-chip color="primary" position="end" (click)="confirmDelete(user.id)">
+          <ion-label>Delete</ion-label>
+        </ion-chip>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>

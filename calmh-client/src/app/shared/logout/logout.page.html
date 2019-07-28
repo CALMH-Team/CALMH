@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form>
+    <ion-row class="logout">
+      <ion-col size="12">
+        <p>Are you sure you want to <ion-text color="danger">log-out</ion-text>?</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="logout">
+      <ion-col size="12">
+        <ion-button (click)="logout()" color="primary" expand="block">Log-out </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -18,14 +18,14 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
 **Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
 
 ### Deployment Environment
-Link to the application in IBM Cloud
-[https://CALMH.mybluemix.net/](https://CALMH.mybluemix.net/)
+Link to the Cloudant service in IBM Cloud:
+[https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
 
 **Test users:**
 1. Admin:
-administrator:
+admin/admin
 2. Volunteer User:
-volunteer: 
+volunteer/volunteer
 3. Patient:
 Patients can be register as New user and/or use the application as anonymous.
 

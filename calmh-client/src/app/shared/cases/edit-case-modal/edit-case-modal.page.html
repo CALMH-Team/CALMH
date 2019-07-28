@@ -1,0 +1,54 @@
+<form [formGroup]="caseForm">
+  <ion-list>
+    <ion-list-header>Edit case</ion-list-header>
+
+    <ion-item>
+      <ion-label position="fixed">User:</ion-label>
+      <ion-input formControlName="user"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Volunteer:</ion-label>
+      <ion-select formControlName="volunteer" placeholder="Select One">
+        <ion-select-option value="{{helper._id}}" *ngFor="let helper of volunteers">{{helper.firstname}}
+          {{helper.lastname}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="fixed">Disaster:</ion-label>
+      <ion-input formControlName="disaster"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Start date:</ion-label>
+      <ion-input formControlName="startDate"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">End date:</ion-label>
+      <ion-input formControlName="endDate"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Reactions:</ion-label>
+      <ion-textarea formControlName="reactions"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Recommendations:</ion-label>
+      <ion-textarea formControlName="recommendations"></ion-textarea>
+    </ion-item>
+  </ion-list>
+</form>
+
+<ion-row>
+  <ion-col size="6">
+    <ion-button (click)="update()" color="primary" expand="block">Update</ion-button>
+  </ion-col>
+  <ion-col size="6">
+    <ion-button (click)="dismiss()" color="secondary" expand="block">Cancel</ion-button>
+  </ion-col>
+</ion-row>

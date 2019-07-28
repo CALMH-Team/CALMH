@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reactions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="reactionsForm">
+    <ion-card *ngFor="let reactionType of reactionTypes">
+      <ion-card-header (click)="expandItem(reactionType)">
+        <ion-card-title *ngIf="reactionType.type == 0">Physical symptoms<ion-icon name="arrow-dropdown"
+            style="float:right">
+          </ion-icon>
+        </ion-card-title>
+        <ion-card-subtitle *ngIf="reactionType.type == 0">such as headache, stomach pain, or difficulty breathing.
+        </ion-card-subtitle>
+        <ion-card-title *ngIf="reactionType.type == 1">Cognitive dysfunction<ion-icon name="arrow-dropdown"
+            style="float:right">
+          </ion-icon>
+        </ion-card-title>
+        <ion-card-subtitle *ngIf="reactionType.type == 1">such as difficulty making decisions or following directions.
+        </ion-card-subtitle>
+        <ion-card-title *ngIf="reactionType.type == 2">Behavioral reactions<ion-icon name="arrow-dropdown"
+            style="float:right">
+          </ion-icon>
+        </ion-card-title>
+        <ion-card-subtitle *ngIf="reactionType.type == 2">such as consuming more alcohol or interpersonal conflict.
+        </ion-card-subtitle>
+        <ion-card-title *ngIf="reactionType.type == 3">Emotional symptoms<ion-icon name="arrow-dropdown"
+            style="float:right">
+          </ion-icon>
+        </ion-card-title>
+        <ion-card-subtitle *ngIf="reactionType.type == 3">such as irritability or excessive sadness.
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <app-expandable [expanded]="reactionType.expanded">
+
+          <ion-list *ngIf="reactionType.type == 0">
+            <ion-item *ngFor="let reaction of physicalReactions">
+              <ion-label>{{reaction.name}}</ion-label>
+              <ion-checkbox slot="end" formControlName="0#{{reaction.id}}"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Other</ion-label>
+              <ion-input formControlName="otherPhysical"></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <ion-list *ngIf="reactionType.type == 1">
+            <ion-item *ngFor="let reaction of cognitiveReactions">
+              <ion-label>{{reaction.name}}</ion-label>
+              <ion-checkbox slot="end" formControlName="1#{{reaction.id}}"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Other</ion-label>
+              <ion-input formControlName="otherCognitive"></ion-input>
+            </ion-item>
+          </ion-list>
+
+
+          <ion-list *ngIf="reactionType.type == 2">
+            <ion-item *ngFor="let reaction of behavioralReactions">
+              <ion-label>{{reaction.name}}</ion-label>
+              <ion-checkbox slot="end" formControlName="2#{{reaction.id}}"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Other</ion-label>
+              <ion-input formControlName="otherBehavioral"></ion-input>
+            </ion-item>
+          </ion-list>
+
+
+          <ion-list *ngIf="reactionType.type == 3">
+            <ion-item *ngFor="let reaction of emotionalReactions">
+              <ion-label>{{reaction.name}}</ion-label>
+              <ion-checkbox slot="end" formControlName="3#{{reaction.id}}"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label>Other</ion-label>
+              <ion-input formControlName="otherEmotional"></ion-input>
+            </ion-item>
+          </ion-list>
+
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-row class="signin">
+      <ion-col size="12">
+        <ion-button (click)="setReactions()" color="primary" expand="block">Next<ion-icon name="arrow-dropright">
+          </ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

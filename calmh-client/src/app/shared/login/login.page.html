@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="log-in"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="loginForm" (ngSubmit)="processForm()" (keyup.enter)="processForm()">
+
+    <ion-list>
+      <ion-item>
+        <ion-label position="fixed">Username:</ion-label>
+        <ion-input formControlName="username" type="text">
+        </ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="fixed">Password:</ion-label>
+        <ion-input formControlName="password" type="password">
+        </ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button type="submit" color="primary" expand="block">Sign In
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button type="button" (click)="goTo('personal-data')" color="secondary" expand="block">Register
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button (click)="goTo('chronic-conditions')" color="tertiary" expand="block">
+          Skip</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>

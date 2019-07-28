@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Actions & recommendations</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Things to remember</ion-card-title>
+    </ion-card-header>
+    <ion-item class="activated" *ngFor="let message of messagesAll">
+      <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+      <ion-label>{{message}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>What to do</ion-card-title>
+    </ion-card-header>
+    <ion-item class="activated" *ngFor="let message of messagesDisplayed">
+      <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+      <ion-label>{{message}}</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>

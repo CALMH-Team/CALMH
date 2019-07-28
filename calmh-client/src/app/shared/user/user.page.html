@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Personal data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+
+    <form [formGroup]="personalDataForm">
+
+      <ion-list>
+        <ion-item>
+          <ion-label position="fixed">Username</ion-label>
+          <ion-input formControlName="username" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Email</ion-label>
+          <ion-input formControlName="email" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">First Name</ion-label>
+          <ion-input formControlName="firstName" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Last Name</ion-label>
+          <ion-input formControlName="lastName" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Age</ion-label>
+          <ion-input formControlName="age" type="number"></ion-input>
+        </ion-item>
+
+        <ion-radio-group formControlName="sex">
+          <ion-item>
+            <ion-label>Gender:</ion-label>
+            <ion-select formControlName="type" placeholder="Select One">
+              <ion-select-option value="{{gender.value}}" *ngFor="let gender of genders">{{gender.label}}
+              </ion-select-option>
+            </ion-select>
+          </ion-item>
+
+      </ion-list>
+
+      <ion-row class="signin">
+        <ion-col size="6">
+          <ion-button (click)="goTo('chronic-conditions')" color="primary" expand="block">Chronic
+            Conditions
+          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button (click)="goTo('disaster-events')" color="secondary" expand="block">Skip
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "CALMH",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

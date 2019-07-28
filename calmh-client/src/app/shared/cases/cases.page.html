@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cases</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="casesForm">
+    <ion-list>
+      <ion-radio-group formControlName='case'>
+        <ion-list-header>
+          <ion-label>Select case</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let case of cases" (press)="caseActionSheet(case.id)">
+          <ion-radio slot="start" value="{{case.id}}">
+          </ion-radio>
+          <ion-label>
+            <h2>{{case.disaster.label}} with user {{case.user.label}}</h2><small>{{case.startDate}}</small>
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </form>
+</ion-content>

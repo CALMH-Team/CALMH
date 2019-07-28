@@ -1,0 +1,32 @@
+<form [formGroup]="disasterForm">
+  <ion-list>
+    <ion-list-header>Edit disaster event</ion-list-header>
+
+    <ion-item>
+      <ion-label>Type:</ion-label>
+      <ion-select formControlName="disasterType" placeholder="Select One">
+        <ion-select-option value="{{disasterType.id}}" *ngFor="let disasterType of disasterTypes">{{disasterType.name}}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Location:</ion-label>
+      <ion-input formControlName="location"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date:</ion-label>
+      <ion-datetime min="1997" max="2010" value="" formControlName="date"></ion-datetime>
+    </ion-item>
+  </ion-list>
+</form>
+
+<ion-row>
+  <ion-col size="6">
+    <ion-button (click)="save()" color="primary" expand="block">Save</ion-button>
+  </ion-col>
+  <ion-col size="6">
+    <ion-button (click)="dismiss()" color="secondary" expand="block">Cancel</ion-button>
+  </ion-col>
+</ion-row>

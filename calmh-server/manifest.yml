@@ -1,0 +1,4 @@
+applications:
+- name: calmh-server
+  random-route: false
+  memory: 128M

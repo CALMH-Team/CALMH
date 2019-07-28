@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{app.name}}<span class="ion-hide-sm-down">: {{app.description}}</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" style="align-content: center">
+        <ion-card button="true" class="wrapper" (click)="goTo('/disasters')">
+          <ion-ripple-effect></ion-ripple-effect>
+          <ion-img src="/assets/icon/warning.svg"></ion-img>
+          <div class="overlay-text ion-text-center">
+            <h3 class="title">I'm in an emergency!</h3>
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <h1>Status:</h1>
+        Heart Rate: {{heartRateMessage}}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Common Reactions and Behavior after a Disaster</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label text-wrap><b>High anxiety/arousal:</b> Tension and anxiety are common after disasters.
+                  Adults
+                  may be excessively worried about the future, have difficulties sleeping, problems concentrating, and
+                  feel jumpy and nervous. These reac-tions can include rapid heart beat and sweating.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Concern or shame</b> over your own reactions. Many people have strong reactions
+                  after a disaster, including fear and anxiety, difficulty concentrating, shame about how they reacted,
+                  and feeling guilty about something. It is expectable and understandable to feel many emo-tions in the
+                  aftermath of an extremely difficult event.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Feeling overwhelmed</b> by tasks that need to be accomplished (housing, food,
+                  paperwork for insurance, child care, parenting).</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Fears of recurrence and reactions to reminders</b>: It is common for survivors
+                  to
+                  fear that another disaster will occur, and to react to things that are reminders of what happened.
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Changes in attitude</b>, view of the world and of oneself: Strong changes in
+                  people’s attitudes after a disaster are common, including questioning one’s spiritual beliefs, trust
+                  in others and social agencies, and concerns about one’s own effectiveness, and dedication to helping
+                  others.
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Shifts in interpersonal relationships</b>: People may feel differently towards
+                  family and friends; for example, they may feel overprotective and very concerned for each other’s
+                  safety, frustrated
+                  by the reactions of a family member or friend, or they may feel like pulling away from family
+                  and friends.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Excessive anger</b>: Some degree of anger is understand-able and expected after
+                  a
+                  disaster, especially when something feels unfair. However, when it leads to violent behavior, extreme
+                  anger is a serious problem.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap><b>Sleep difficulties</b>: Trouble falling asleep and frequent awakening is common
+                  after a disaster, as people are on edge and worried about adversities and life changes.</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Tips for Relaxation</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-card-header>
+              Tension and anxiety are common after disasters. Unfortunately, they can make it more difficult to cope
+              with the many things that must be done to recover. There is no easy solution to coping with
+              post-disaster problems, but taking time during the day to calm yourself through relaxation exercises
+              may make it easier to sleep, concentrate, and have energy for coping with life. These can include
+              muscle relaxation exercises, breathing exercises, meditation, swimming, stretching, yoga, prayer,
+              exercise, listening to quiet music, spending time in nature, and so on. Here are some basic breathing
+              exercises that may help:</ion-card-header>
+            <ion-list>
+              <ion-item>
+                <ion-label text-wrap>Inhale slowly (one-thousand one; one-thousand two; one-thousand three) through your
+                  nose and
+                  comfortably fill your lungs all the way down to your belly.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap>Silently and gently say to yourself, “My body is filled with calmness.” Exhale
+                  slowly
+                  (one-thousand one; one-thousand two; one-thousand three) through your mouth and comfortably empty
+                  your lungs all the way down to your stomach.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap>Silently and gently say to yourself, “My body is releasing the tension.”
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap>Repeat five times slowly and comfortably.</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label text-wrap>Do this as many times a day as needed.</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

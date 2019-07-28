@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Disasters</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="eventForm">
+    <ion-list>
+      <ion-radio-group formControlName='event'>
+        <ion-list-header>
+          <ion-label>Select event</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let event of events" (press)="disasterActionSheet(event.id)">
+          <ion-radio slot="start" value="{{event.id}}">
+          </ion-radio>
+          <ion-label>
+            <h2>{{event.disasterType.name}} on {{event.location}}</h2><small>{{event.date}}</small>
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-row *ngIf="!this.authSvc.isAdmin()">
+      <ion-col size="12">
+        <ion-button (click)="registerEvent()" color="primary" expand="block">Next <ion-icon name="arrow-dropright">
+          </ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>
