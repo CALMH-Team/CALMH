@@ -4,11 +4,10 @@
 Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://youtu.be/cw09159cyII)
 
 ## Project documentation:
-1. Project description
-2. Architecture diagrams
-3. Project roadmap
-4. Project workflows
-5. Project implementation
+1. [Project description](./projectFiles/CALMH_ProjectDescription.pdf)
+2. [Architecture diagrams](./projectFiles/CALMH_ArchitectureDiagram.pdf)
+3. [Project roadmap](./projectFiles/CALMH_roadmap.pdf)
+4. [Project overview and workflows](./projectFiles/CALMH_overview.pdf)
 6. Team Members
     - Sebastianus Bekker (sebastianus_bekker@persistent.com)
     - Roberto Mosqueda (roberto_mosqueda@persistent.com)
