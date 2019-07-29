@@ -49,6 +49,8 @@ See [Server ReadMe](./calmh-server/README.md) for usage instructions.
 Link to the Cloudant service in IBM Cloud:
 [https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
 
+The client cannot be deployed in the cloud due to a memory limitation. See [Mobile client](#test-mobile-client) to install the app in an Android device.
+
 **Test users:**
 1. Admin:
 admin/admin
