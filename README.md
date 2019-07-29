@@ -57,7 +57,7 @@ admin/admin
 2. Volunteer User:
 volunteer/volunteer
 3. Patient:
-Patients can be register as New user and/or use the application as anonymous.
+Patients can be register as New user (anonymous login was not implemented).
 
 
     
