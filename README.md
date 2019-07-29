@@ -15,7 +15,6 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
     - Aldo Vargas (aldo_vargas@persistent.com)
     - Amilcar Yanez (amilcar_yanez@persistent.com)
 
-**Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
 
 ## Project implementation
 Both client and server implementations are in this repository: calmh-client and calmh-server.
