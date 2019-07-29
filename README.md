@@ -4,11 +4,10 @@
 Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://youtu.be/cw09159cyII)
 
 ## Project documentation:
-1. Project description
-2. Architecture diagrams
-3. Project roadmap
-4. Project workflows
-5. Project implementation
+1. [Project description](./projectFiles/CALMH_ProjectDescription.pdf)
+2. [Architecture diagrams](./projectFiles/CALMH_ArchitectureDiagram.pdf)
+3. [Project roadmap](./projectFiles/CALMH_roadmap.pdf)
+4. [Project overview and workflows](./projectFiles/CALMH_overview.pdf)
 6. Team Members
     - Sebastianus Bekker (sebastianus_bekker@persistent.com)
     - Roberto Mosqueda (roberto_mosqueda@persistent.com)
@@ -16,7 +15,6 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
     - Aldo Vargas (aldo_vargas@persistent.com)
     - Amilcar Yanez (amilcar_yanez@persistent.com)
 
-**Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
 
 ## Project implementation
 Both client and server implementations are in this repository: calmh-client and calmh-server.
@@ -40,7 +38,7 @@ See [Server ReadMe](./calmh-server/README.md) for usage instructions.
 ### Deployment Environment
 Link to the CALMH-Server and CALMH-Client deployed @ IBM Cloud: [https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
 
-The client cannot be deployed in the cloud due to a memory limitation. See [Mobile client](#test-mobile-client) to install the app in an Android device.
+In addition, see [Mobile client](#test-mobile-client) to install the app in an Android device.
 
 **Test users:**
 1. Admin:
@@ -55,4 +53,7 @@ To provide a more robust and more scalable back-end production environment, the 
 
 [Initial implementation](./calmh-server-liberty)
 
+### References
+- [https://www.phe.gov/Preparedness/planning/abc/Pages/disaster-behavioral.aspx](https://www.phe.gov/Preparedness/planning/abc/Pages/disaster-behavioral.aspx)
+- [https://www.nctsn.org/sites/default/files/resources//pfa_field_operations_guide.pdf](https://www.nctsn.org/sites/default/files/resources//pfa_field_operations_guide.pdf)
 
