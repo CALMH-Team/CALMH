@@ -1,14 +1,15 @@
 
-### Welcome to CALMH repository
+# Welcome to CALMH repository
 
 Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://)
 
-### Project documentation:
-1. Project description
-2. Architecture diagrams
-3. Project roadmap
-4. Project workflows
-5. Team Members
+## Project documentation:
+1. [Project description](#project-description)
+2. [Architecture diagrams](#architecture-diagrams)
+3. [Project roadmap](#project-roadmap)
+4. [Project workflows](#project-workflow)
+5. [Project implementation](#project-implementation)
+6. [Team Members](#team-members)
     - Sebastianus Bekker (sebastianus_bekker@persistent.com)
     - Roberto Mosqueda (roberto_mosqueda@persistent.com)
     - Luis Peregrina (luis_andrade@persistent.com)
@@ -16,6 +17,33 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
     - Amilcar Yanez (amilcar_yanez@persistent.com)
 
 **Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
+
+## Project description
+
+## Architecture diagrams
+
+## Project roadmap
+
+## Project workflows
+
+## Project implementation
+Both client and server implementations are in this repository: calmh-client and calmh-server.
+
+### Mobile client platform
+We use the Ionic 4 framework for application development; this framework uses Angular 7 with TypeScript for the code, CSS preprocessing using SASS. Ionic leverages the application building duties to Apache Cordova, which in turn uses Node.js as its backbone, connecting to the Node.js & Cloudant application we developed on IBM Cloud.
+
+The Chat application is made using SocketIO, and integrated into the REST API server. We also make use of a Health library that allowed us to gather health data, such as Heart Rate, from the Google Health system, which we use for user health diagnostics.
+
+The benefit of using a Cordova based framework is that the application can run in a browser, Android device and even an iOS device.
+
+See [Client ReadMe](./calmh-client/README.md) for usage instructions.
+
+#### Test mobile client
+We have generated an APK ready to be installed in Android devices. First you need to enable "Install from External Source" or similar in your device. Each device manufacturer has this option somewhere in the device's settings, see [How to enable APK installs on your Android device](https://www.expressvpn.com/support/vpn-setup/enable-apk-installs-android/). Once you are able to install from external sources, download and install the [CALMH application](./projectFiles/CALMH-debug.apk).
+
+### Server
+A NodeJS project that uses Express to handle HTTP requests & SockeIO for the chat functionality.
+See [Server ReadMe](./calmh-server/README.md) for usage instructions.
 
 ### Deployment Environment
 Link to the Cloudant service in IBM Cloud:
@@ -29,9 +57,7 @@ volunteer/volunteer
 3. Patient:
 Patients can be register as New user and/or use the application as anonymous.
 
-### Mobile Platform
-We use the Ionic 4 framework for application development; this framework uses Angular 7 with TypeScript for the code, CSS preprocessing using SASS. Ionic leverages the application building duties to Apache Cordova, which in turn uses Node.js as its backbone, connecting to the Node.js & Cloudant application we developed on IBM Cloud.
-The Chat application is made using SocketIO, and integrated into the REST API server. We also make use of a Health library that allowed us to gather health data, such as Heart Rate, from the Google Health system, which we use for user health diagnostics.
+
     
 
 ### Cloud services
