@@ -38,7 +38,7 @@ See [Server ReadMe](./calmh-server/README.md) for usage instructions.
 ### Deployment Environment
 Link to the CALMH-Server and CALMH-Client deployed @ IBM Cloud: [https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
 
-The client cannot be deployed in the cloud due to a memory limitation. See [Mobile client](#test-mobile-client) to install the app in an Android device.
+In addition, see [Mobile client](#test-mobile-client) to install the app in an Android device.
 
 **Test users:**
 1. Admin:
@@ -53,4 +53,7 @@ To provide a more robust and more scalable back-end production environment, the 
 
 [Initial implementation](./calmh-server-liberty)
 
+### References
+- [https://www.phe.gov/Preparedness/planning/abc/Pages/disaster-behavioral.aspx](https://www.phe.gov/Preparedness/planning/abc/Pages/disaster-behavioral.aspx)
+- [https://www.nctsn.org/sites/default/files/resources//pfa_field_operations_guide.pdf](https://www.nctsn.org/sites/default/files/resources//pfa_field_operations_guide.pdf)
 
