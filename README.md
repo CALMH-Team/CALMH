@@ -4,12 +4,12 @@
 Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://youtu.be/cw09159cyII)
 
 ## Project documentation:
-1. [Project description](#project-description)
-2. [Architecture diagrams](#architecture-diagrams)
-3. [Project roadmap](#project-roadmap)
-4. [Project workflows](#project-workflow)
-5. [Project implementation](#project-implementation)
-6. [Team Members](#team-members)
+1. Project description
+2. Architecture diagrams
+3. Project roadmap
+4. Project workflows
+5. Project implementation
+6. Team Members
     - Sebastianus Bekker (sebastianus_bekker@persistent.com)
     - Roberto Mosqueda (roberto_mosqueda@persistent.com)
     - Luis Peregrina (luis_andrade@persistent.com)
@@ -17,14 +17,6 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
     - Amilcar Yanez (amilcar_yanez@persistent.com)
 
 **Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
-
-## Project description
-
-## Architecture diagrams
-
-## Project roadmap
-
-## Project workflows
 
 ## Project implementation
 Both client and server implementations are in this repository: calmh-client and calmh-server.
@@ -59,10 +51,9 @@ volunteer/volunteer
 3. Patient:
 Patients can be register as New user (anonymous login was not implemented).
 
-
-    
-
 ### Cloud services
 To provide a more robust and more scalable back-end production environment, the Node.js REST services implementation switches to a Liberty Application Server JAX-RS  setup still using Cloudant for storage. This is wrapped in IBM API Connect layer using a microservices pattern to provide the appropriate entry points for either the mobile application for users, or the web application used by admins and volunteers. Oauth user authentication is provided by either IBM App ID or interfacing with Facebook/Google, and user identity session is maintained through JSON Web Tokens. This whole back-end infrastructure runs on IBM Cloud.
+
+[Initial implementation](./calmh-server-liberty)
 
 
