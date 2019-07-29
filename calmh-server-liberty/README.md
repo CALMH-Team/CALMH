@@ -12,7 +12,7 @@ GET /calmh/rest/test/getCouchDatabase - test service to see the CouchDB/Cloudant
 GET /calmh/rest/setup/initvalues - setup server with initial data </br>
 GET /calmh/rest/setup/samplevalues - setup server with some sample data </br>
 
-GET /calmh/rest/auth/login/{id}/{pw} - do a user authentication </br>
+GET /calmh/rest/login/{id}/{pw} - do a user authentication </br>
 
 GET /calmh/rest/user/{id} - read user </br>
 GET /calmh/rest/user/all - read all users </br>
