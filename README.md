@@ -46,8 +46,7 @@ A NodeJS project that uses Express to handle HTTP requests & SockeIO for the cha
 See [Server ReadMe](./calmh-server/README.md) for usage instructions.
 
 ### Deployment Environment
-Link to the Cloudant service in IBM Cloud:
-[https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
+Link to the CALMH-Server and CALMH-Client deployed @ IBM Cloud: [https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
 
 The client cannot be deployed in the cloud due to a memory limitation. See [Mobile client](#test-mobile-client) to install the app in an Android device.
 
