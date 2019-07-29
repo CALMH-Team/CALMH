@@ -236,6 +236,7 @@ io.sockets.on('connection', (socket) => {
 
 
 var port = process.env.PORT || 3001
+app.use(express.static('www'));
 http.listen(port, () => {
     // Pere
     //https://calmh-server.mybluemix.net/rest/*
