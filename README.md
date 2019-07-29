@@ -1,15 +1,15 @@
 
 # Welcome to CALMH repository
 
-Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://)
+Before going to the deployed aplication and docs please watch our 3 mins youtube video to understand the main componentes and workflows [here](https://youtu.be/cw09159cyII)
 
 ## Project documentation:
-1. [Project description](#project-description)
-2. [Architecture diagrams](#architecture-diagrams)
-3. [Project roadmap](#project-roadmap)
-4. [Project workflows](#project-workflow)
-5. [Project implementation](#project-implementation)
-6. [Team Members](#team-members)
+1. Project description
+2. Architecture diagrams
+3. Project roadmap
+4. Project workflows
+5. Project implementation
+6. Team Members
     - Sebastianus Bekker (sebastianus_bekker@persistent.com)
     - Roberto Mosqueda (roberto_mosqueda@persistent.com)
     - Luis Peregrina (luis_andrade@persistent.com)
@@ -17,14 +17,6 @@ Before going to the deployed aplication and docs please watch our 3 mins youtube
     - Amilcar Yanez (amilcar_yanez@persistent.com)
 
 **Can be found here [here](https://github.com/CALMH-Team/CALMH/tree/master/projectFiles)**
-
-## Project description
-
-## Architecture diagrams
-
-## Project roadmap
-
-## Project workflows
 
 ## Project implementation
 Both client and server implementations are in this repository: calmh-client and calmh-server.
@@ -44,10 +36,6 @@ We have generated an APK ready to be installed in Android devices. First you nee
 ### Server
 A NodeJS project that uses Express to handle HTTP requests & SockeIO for the chat functionality.
 See [Server ReadMe](./calmh-server/README.md) for usage instructions.
-
-### Deployment Environment
-Link to the Cloudant service in IBM Cloud:
-[https://calmh-server.mybluemix.net/](https://calmh-server.mybluemix.net/)
 
 **Test users:**
 1. Admin:
