@@ -12,16 +12,16 @@ GET /calmh/rest/test/getCouchDatabase - test service to see the CouchDB/Cloudant
 GET /calmh/rest/setup/initvalues - setup server with initial data </br>
 GET /calmh/rest/setup/samplevalues - setup server with some sample data </br>
 
-GET /calmh/rest/auth/login/{id}/{pw} - do a user authentication </br>
+GET /calmh/rest/login/{id}/{pw} - do a user authentication </br>
 
 GET /calmh/rest/user/{id} - read user </br>
 GET /calmh/rest/user/all - read all users </br>
-POST /calmh/rest/user/new - create new user </br>
+POST /calmh/rest/user - create new user </br>
 PUT /calmh/rest/user/{id} - update user </br>
 DELETE /calmh/rest/user/{id} - delete user </br>
 
 GET /calmh/rest/disaster/{id} - read disaster event </br>
 GET /calmh/rest/disaster/all - read all disaster events </br>
-POST /calmh/rest/disaster/new - create disaster event </br>
+POST /calmh/rest/disaster - create disaster event </br>
 PUT /calmh/rest/disaster/{id} - update disaster event </br>
 DELETE /calmh/rest/disaster/{id} - delete disaster event </br>
